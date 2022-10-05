@@ -1,0 +1,210 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sam Smith",
+      "username": "user1",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "name": "Mary Jeferson",
+      "username": "user2",
+      "password": "password2"
+    },
+    {
+      "id": 3,
+      "name": "George Sallivan",
+      "username": "user3",
+      "password": "password3"
+    },
+    {
+      "id": 4,
+      "name": "Victoria Balkonskaya",
+      "username": "user4",
+      "password": "password4"
+    },
+    {
+      "id": 5,
+      "name": "Lusy Shwartzman",
+      "username": "user5",
+      "password": "password5"
+    }
+  ],
+  "userContacts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "John Smith2",
+      "email": "h@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "name": "Jane Jackson",
+      "email": "janeJackson@gmail.com",
+      "phone": "+79004256682"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "name": "John Smith1",
+      "email": "j@gmail.com",
+      "phone": "+999999"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "name": "John Smith2",
+      "email": "h@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "name": "John Smith1",
+      "email": "j@gmail.com",
+      "phone": "+999999"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "name": "John Smith2",
+      "email": "h@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "name": "Suzan Parker",
+      "email": "parker@yahoo.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "name": "John Smith",
+      "email": "johnsmith@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 14,
+      "userId": 3,
+      "name": "Jane Jackson",
+      "email": "janeJackson@gmail.com",
+      "phone": "+79004256682"
+    },
+    {
+      "name": "Suzan Parker",
+      "email": "parker@yahoo.com",
+      "phone": "+7900945683",
+      "id": 17,
+      "userId": 4
+    },
+    {
+      "id": 18,
+      "userId": 4,
+      "name": "John Smith",
+      "email": "johnsmith@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 20,
+      "userId": 5,
+      "name": "John Smith1",
+      "email": "j@gmail.com",
+      "phone": "+999999"
+    },
+    {
+      "id": 21,
+      "userId": 5,
+      "name": "John Smith2",
+      "email": "h@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 22,
+      "userId": 5,
+      "name": "Suzan Parker",
+      "email": "parker@yahoo.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 23,
+      "userId": 5,
+      "name": "John Smith",
+      "email": "johnsmith@gmail.com",
+      "phone": "+7900945682"
+    },
+    {
+      "id": 24,
+      "userId": 5,
+      "name": "Jane Jackson",
+      "email": "janeJackson@gmail.com",
+      "phone": "+79004256682"
+    },
+    {
+      "name": "Parker",
+      "email": "p@yahoo.com",
+      "phone": "ggggghhh",
+      "id": "9c2a7864-55f9-4295-8b03-5b610769b40c",
+      "userId": 2
+    },
+    {
+      "name": "Parker",
+      "email": "p@yahoo.com",
+      "phone": "ggggghhh",
+      "id": "9c2a7864-55f9-4295-8b03",
+      "userId": 2
+    },
+    {
+      "name": "Parker",
+      "email": "p@yahoo.com",
+      "phone": "ggg",
+      "id": "gggg",
+      "userId": 2
+    },
+    {
+      "name": "Parker1",
+      "email": "p@yahoo.com",
+      "phone": "+79465251254",
+      "id": "ggg",
+      "userId": 2
+    },
+    {
+      "name": "Igor Baklikov",
+      "email": "igor@gmail.com",
+      "phone": "+79009704141",
+      "id": "7d742032-583d-48c1-840b-f4bb65cee92b",
+      "userId": 4
+    },
+    {
+      "id": "ec8db284-88f3-471b-af4a-812db2464fb2",
+      "userId": 4
+    },
+    {
+      "id": "1f7f72c3-761a-40b0-8a07-e922cdbd653e",
+      "userId": 4
+    },
+    {
+      "id": "158a14b3-5668-4158-9425-122dc9254c28",
+      "userId": 4
+    },
+    {
+      "id": "8ed16274-f47e-4d6f-84e2-8d43c3676565",
+      "userId": 4
+    },
+    {
+      "id": "55f19423-df57-425a-8e95-4f4fdf462250",
+      "userId": 4
+    },
+    {
+      "name": "Liana Ilyichyova",
+      "email": "liana.ilyichyova@gmail.com",
+      "phone": "+37498331534",
+      "id": "3d421318-ec9f-4ac4-b1d0-d1ee1f8fe590",
+      "userId": 4
+    }
+  ]
+}

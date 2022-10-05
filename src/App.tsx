@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./index.scss";
+import { Router, Switch, Route, Redirect } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import LoginPanel from "./components/login-page/login-page";
+import ContactsPage from "./components/contacts-page/contacts-page";
+import { IDataType } from "./assets/interfaces/intefaces";
+import { useSelector } from "react-redux";
+
+export const browserHistory = createBrowserHistory();
 
 function App() {
+  const currentUser = useSelector(function (state: {
+    currentUserData: { data: IDataType };
+  }) {
+    return state.currentUserData.data;
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={browserHistory}>
+      <Switch>
+        <Route exact path="/" component={LoginPanel} />
+        {currentUser.id && (
+          <Route exact path={"/contacts"} component={ContactsPage} />
+        )}
+        <Route path="*">
+          <Redirect to="/" />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

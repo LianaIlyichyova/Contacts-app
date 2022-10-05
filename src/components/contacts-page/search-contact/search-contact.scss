@@ -1,0 +1,17 @@
+.search-container {
+  margin: 10px 0 20px 0;
+  .MuiSvgIcon-root {
+    fill: var(--dark-sky-blue) !important;
+  }
+  input[type="text"] {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .search-container {
+    input[type="text"] {
+      width: 70%;
+    }
+  }
+}

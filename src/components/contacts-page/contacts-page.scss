@@ -1,0 +1,32 @@
+.contacts-page-container {
+  display: block;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  h2 {
+    color: var(--dark-sky-blue);
+  }
+  input[type="submit"] {
+    padding: 2px 20px;
+    width: 150px;
+    &:focus {
+      width: 150px;
+    }
+  }
+}
+
+.contact-icon {
+  fill: var(--sky-blue) !important;
+  font-size: 70px !important;
+}
+
+.MuiTableBody-root {
+  overflow: auto !important;
+}
+
+@media only screen and (max-width: 479px) {
+  .contacts-page-container {
+    width: 98%;
+    margin-top: 20px;
+  }
+}
