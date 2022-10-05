@@ -1,4 +1,4 @@
-#User Contacts React app
+User Contacts React app
  node JS version- 14.18.0
 
 used Redux, Typescript
