@@ -67,7 +67,6 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
               {contacts.map((row: IRowDataType) => (
                 <TableRow className="table-row" key={uuidv4()}>
                   {dataKeys.map((element: string) => (
-                    <>
                       <TableCell
                         align="left"
                         key={uuidv4()}
@@ -78,7 +77,6 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
                       >
                         {row[element as keyof IRowDataType]}
                       </TableCell>
-                    </>
                   ))}
                   <TableCell key={uuidv4()}>
                     <EditIcon
