@@ -33,7 +33,8 @@ const ContactsPage = () => {
     fetch(`http://localhost:3000/userContacts?userId=${currentUser.id}`)
       .then((response) => response.json())
       .then((data) => {
-        setContacts(data);
+        const sortedContacts = data.sort((a:IRowDataType,b:IRowDataType)=>(a.name < b.name) ? -1 : 1)
+        setContacts(sortedContacts);
       });
   }, [currentUser.id]);
 

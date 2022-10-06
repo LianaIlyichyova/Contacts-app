@@ -5,7 +5,7 @@ export interface IDataType {
   password?: string;
 }
 export interface IRowDataType {
-  name?: string | undefined;
+  name?: string | any;
   email?: string;
   phone?: string;
   id?: string | number | any;
