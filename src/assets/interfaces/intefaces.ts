@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 export interface IDataType {
-  id?: number;
+  id?: string;
   name?: string;
   username?: string;
   password?: string;
@@ -8,12 +10,12 @@ export interface IRowDataType {
   name?: string | any;
   email?: string;
   phone?: string;
-  id?: string | number | any;
-  userId?: string | number |any;
+  id?: string;
+  userId?: string;
 }
 
 export interface IDataModalType {
   show?: boolean;
   onHide?: VoidFunction;
-  data?: string | any;
+  data?: string | ReactNode;
 }
