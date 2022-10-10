@@ -18,7 +18,7 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
   const options = useFetchOptions("DELETE", "application/json");
   const dispatch = useDispatch();
 
-  const handleEdit = (row: IRowDataType) => {
+  const handleEdit = (row: IRowDataType<string>) => {
     setShowPopup(true);
     dispatch({
       type: "CURRENT_CONTACT",
@@ -32,7 +32,7 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
     e.stopPropagation();
     const id = (e.target as HTMLInputElement).id;
     const newFilteredArray = contacts.filter(
-      (contact: IRowDataType) => String(contact.id) !== String(id)
+      (contact: IRowDataType<string>) => String(contact.id) !== String(id)
     );
     setContacts(newFilteredArray);
     fetch(`http://localhost:3000/userContacts/${id}`, options);
@@ -42,7 +42,7 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
     contacts.length &&
     Object.keys(contacts[0]).filter((key) => key !== "id" && key !== "userId");
 
-  const onLinkClick = (element: string, row: IRowDataType): void => {
+  const onLinkClick = (element: string, row: IRowDataType<string>): void => {
     if (element === "email") {
       window.location.href = `mailto:${row[element]}`;
     } else if (element === "phone") {
@@ -64,7 +64,7 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {contacts.map((row: IRowDataType) => (
+              {contacts.map((row: IRowDataType<string>) => (
                 <TableRow className="table-row" key={uuidv4()}>
                   {dataKeys.map((element: string) => (
                       <TableCell
@@ -75,7 +75,7 @@ const Contacts = ({ contacts, setContacts, setShowPopup }: any) => {
                           element !== "name" && onLinkClick(element, row)
                         }
                       >
-                        {row[element as keyof IRowDataType]}
+                        {row[element as keyof IRowDataType<string>]}
                       </TableCell>
                   ))}
                   <TableCell key={uuidv4()}>

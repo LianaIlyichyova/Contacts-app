@@ -5,19 +5,31 @@
   margin: auto;
   h2 {
     color: var(--dark-sky-blue);
+    padding-left: 100px;
   }
   input[type="submit"] {
-    padding: 2px 20px;
+    padding: 2px 15px;
+   
+  }
+  .add-contact{
     width: 150px;
     &:focus {
       width: 150px;
     }
   }
+  .log-out{
+    width: 100px;
+    float:right;
+  &:focus {
+    width: 100px;
+  }
+}
 }
 
 .contact-icon {
   fill: var(--sky-blue) !important;
   font-size: 70px !important;
+  margin-left: 100px;
 }
 
 .MuiTableBody-root {

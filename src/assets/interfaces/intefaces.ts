@@ -6,12 +6,12 @@ export interface IDataType {
   username?: string;
   password?: string;
 }
-export interface IRowDataType {
-  name?: string | any;
+export interface IRowDataType<T> {
+  name: T;
   email?: string;
   phone?: string;
-  id?: string;
-  userId?: string;
+  id: string;
+  userId: string;
 }
 
 export interface IDataModalType {

@@ -46,7 +46,7 @@ const AddEditContact = ({ setContacts, contacts, contact, onHide }: any) => {
         `http://localhost:3000/userContacts/${contact.id}`,
         editContactOptions
       ).catch((error) => console.log(error));
-      const newContacts = contacts.map((element: IRowDataType) => {
+      const newContacts = contacts.map((element: IRowDataType<string>) => {
         if (element.id === contact.id) {
           return newContact;
         } else {

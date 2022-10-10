@@ -6,7 +6,7 @@ export const useContacts = (contacts: any, text: string) => {
     return (
       contacts.length &&
       contacts.filter(
-        (contact: IRowDataType) =>
+        (contact: IRowDataType<string>) =>
           contact?.phone?.includes(text) ||
           contact?.name?.toLowerCase().includes(text.toLocaleLowerCase())
       )

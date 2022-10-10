@@ -9,6 +9,7 @@ export const loginVariables = {
   userNamePlaceHolder: "Username (required)",
   passwordPlaceHolder: "Password (required)",
   login: "Go !",
+  logOut: "Log Out"
 };
 
 export const contactsPageVariables = {
