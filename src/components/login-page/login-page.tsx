@@ -27,7 +27,13 @@ const LoginPanel = () => {
       .then((data) => {
         setUsers(data);
       });
-  }, []);
+      dispatch({
+        type: "CURRENT_USER_DATA",
+        payload: {
+          data: { id: "", name: "" },
+        },
+      });
+  }, [dispatch]);
 
   useEffect(() => {
     if (users.length) {
@@ -61,6 +67,8 @@ const LoginPanel = () => {
         formData.password &&
         setUser({ username: userName, password: password }));
   };
+
+  // console.log(currentUserData)
 
   return (
     <div className="login-container">
